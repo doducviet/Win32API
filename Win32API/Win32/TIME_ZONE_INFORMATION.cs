@@ -3,11 +3,12 @@ using System.Runtime.InteropServices;
 
 namespace Win32
 {
-	public struct TIME_ZONE_INFORMATION
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    public struct TIME_ZONE_INFORMATION
 	{
 		public int Bias;
 
-		[MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)]
+		[MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)]        
 		public string StandardName;
 
 		public SYSTEMTIME StandardDate;

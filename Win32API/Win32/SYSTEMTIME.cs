@@ -1,8 +1,10 @@
 using System;
+using System.Runtime.InteropServices;
 
 namespace Win32
 {
-	public struct SYSTEMTIME
+    [StructLayout(LayoutKind.Sequential)]
+    public struct SYSTEMTIME
 	{
 		public short wYear;
 
