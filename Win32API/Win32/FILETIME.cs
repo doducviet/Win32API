@@ -4,8 +4,8 @@ namespace Win32
 {
 	public struct FILETIME
 	{
-		public int dwLowDateTime;
+		public uint dwLowDateTime;
 
-		public int dwHighDateTime;
+		public uint dwHighDateTime;
 	}
 }
