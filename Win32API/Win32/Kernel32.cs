@@ -2764,6 +2764,9 @@ namespace Win32 {
         public static extern int GetSystemTimeAdjustment(int lpTimeAdjustment, ref int lpTimeIncrement, ref int lpTimeAdjustmentDisabled);
 
         [DllImport("kernel32")]
+        public static extern void GetSystemTimeAsFileTime(ref FILETIME lpSystemTimeAsFileTime);
+
+        [DllImport("kernel32")]
         public static extern int GetTapeParameters(IntPtr hDevice, int dwOperation, ref int lpdwSize, IntPtr lpTapeInformation);
 
         [DllImport("kernel32")]
