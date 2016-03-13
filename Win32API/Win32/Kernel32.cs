@@ -2799,7 +2799,7 @@ namespace Win32 {
         [DllImport("kernel32")]
         public static extern int GetTimeFormat(int Locale, int dwFlags, ref SYSTEMTIME lpTime, string lpFormat, string lpTimeStr, int cchTime);
 
-        [DllImport("kernel32", CharSet = CharSet.Auto)]
+        [DllImport("kernel32")]
         public static extern int GetTimeZoneInformation(ref TIME_ZONE_INFORMATION lpTimeZoneInformation);
 
         [DllImport("kernel32")]

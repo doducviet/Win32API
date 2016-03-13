@@ -3616,7 +3616,10 @@ namespace Win32
 		[DllImport("user32")]
 		public static extern int GetMessageTime();
 
-		[DllImport("user32")]
+        [DllImport("user32")]
+        public static extern int GetMonitorInfo(IntPtr hMonitor, ref MONITORINFO lpmi);
+
+        [DllImport("user32")]
 		public static extern int GetNextDlgGroupItem(IntPtr hDlg, IntPtr hCtl, int bPrevious);
 
 		[DllImport("user32")]

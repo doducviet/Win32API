@@ -2,7 +2,7 @@ using System;
 
 namespace Win32
 {
-	public struct RECT
+    public struct RECT
 	{
 		public int Left;
 

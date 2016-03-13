@@ -224,6 +224,8 @@
     <Compile Include="Win32\MONCONVSTRUCT.cs" />
     <Compile Include="Win32\MONERRSTRUCT.cs" />
     <Compile Include="Win32\MONHSZSTRUCT.cs" />
+    <Compile Include="Win32\MONITORINFO.cs" />
+    <Compile Include="Win32\MONITORINFOEX.cs" />
     <Compile Include="Win32\MONLINKSTRUCT.cs" />
     <Compile Include="Win32\MONMSGSTRUCT.cs" />
     <Compile Include="Win32\MOUSEHOOKSTRUCT.cs" />
