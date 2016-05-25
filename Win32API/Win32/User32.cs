@@ -3704,10 +3704,10 @@ namespace Win32
 		public static extern int GetWindowLong(IntPtr hwnd, int nIndex);
 
 		[DllImport("user32")]
-		public static extern int GetWindowPlacement(IntPtr hwnd, ref WINDOWPLACEMENT lpwndpl);
+		public static extern int GetWindowPlacement(IntPtr hwnd, out WINDOWPLACEMENT lpwndpl);
 
 		[DllImport("user32")]
-		public static extern int GetWindowRect(IntPtr hwnd, ref RECT lpRect);
+		public static extern int GetWindowRect(IntPtr hwnd, out RECT lpRect);
 
 		[DllImport("user32")]
 		public static extern int GetWindowRgn(IntPtr hwnd, IntPtr hRgn);
@@ -3925,7 +3925,10 @@ namespace Win32
 		[DllImport("user32")]
 		public static extern int PostThreadMessage(int idThread, int msg, int wParam, int lParam);
 
-		[DllImport("user32")]
+        [DllImport("user32")]
+        public static extern int PrintWindow(IntPtr hwnd, IntPtr hdc, int flags);
+
+        [DllImport("user32")]
 		public static extern int PtInRect(ref RECT lpRect, int ptX, int ptY);
 
 		[DllImport("user32")]
